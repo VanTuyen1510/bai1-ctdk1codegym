@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Nhập 2 số a và b ,kiểm tra xem a chia hết cho b</title>
+</head>
+<body>
+<h1>Bài 1:</h1>
+<button onclick="test()">Kiểm tra</button>
+<h2 id="test" style="color: #5bc0de"></h2>
+</body>
+<script>
+    function test(){
+        let a = +prompt("Nhập vào số a :");
+        let b = +prompt("Nhập vào số b :");
+        if(a % b === 0){
+            document.getElementById("test").innerHTML="a chia hết cho b";
+        }else {
+            document.getElementById("test").innerHTML="a không chia hết cho b";
+        }
+    }
+
+
+</script>
+</html>
